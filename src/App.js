@@ -1,11 +1,17 @@
-import React from "react";
-import "./style.css";
+import React, { Fragment } from 'react';
+import './style.css';
 
-export default function App() {
+import Header from './Component/Layout/Header';
+import Meals from './Component/Meals/Meals';
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editinzg to see some magic happen :)</p>
-    </div>
+    <Fragment>
+      <Header> </Header>
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
 }
+
+export default App;
